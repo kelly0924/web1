@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .js{ 
+            font-weight: bolder;
+            color:powderblue;
+        }
+    </style>
+</head>
+<body>
+   
+   <h2>JavaScript</h2>
+  
+   <input type="button", value="night", onclick="
+   document.querySelector('body').style.backgroundColor='black';
+   document.querySelector('body').style.color='white'
+   ">
+
+   <input type="button", value="day", onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black'
+   ">
+ 
+ //if 문을 통하여 돔더 간단하고 효율적으로 만들수 있다.
+ <input id="nigth_day" type="button" value="ngith" onclick="
+ 
+  if(document.querySelector('#nigth_day').value==='ngith'){
+    document.querySelector('body').style.backgroundColor='black';
+   document.querySelector('body').style.color='white';
+   document.querySelector('#nigth_day').value='day';
+
+  }else{
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('#nigth_day').value='ngith';
+  }
+ 
+ 
+ ">
+
+
+
+//코드를 리팩토링 하여 좀더 간결하고 재사용이 유리하게 만들었다. 
+
+   <input  type="button" value="night" onclick="
+   var target= document.querySelector('body');
+
+   if(this.value==='night'){
+    target.style.backgroundColor='black';
+    target.style.color='white'
+    this.value='day';
+   } else{
+     target.style.backgroundColor='white';
+     target.style.color='black';
+    this.value='night';
+   }
+   
+   ">
+
+
+
+   <br><br><br> 
+   <span class="js">JavaScript</span> (JS) is a lightweight, interpreted, or just-in-time compiled programming 
+    language with first-class functions. While it is most well-known as the scripting language for Web pages, 
+    many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. <span class="js">JavaScript</span> is a prototype-based, 
+    multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative 
+    (e.g. functional programming) styles. Read more about  <span class="js">JavaScript</span> .
+
+</body>
+</html>
