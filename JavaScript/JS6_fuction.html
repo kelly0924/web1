@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>fuction</h2>
+    <script>
+         function plus(){
+             document.write(1+1 +'<br>');
+         }
+
+         plus();//위에 만든 플러스 라는 함수를 호출 
+         //위에 긴코드를 쓰지 않거도 사용 가능하다. 만약 이 계산이 1억번 있다고 가정하고 생각 하면 
+         //함수의 필요 성을 좀더 자세히 알수 있다.
+    </script>
+    
+     <h2>argment & parmiter</h2>
+     <script>
+         function sum(left,right){//인자를 받아서 함수안에 매개 변수에 전달하는 것을 매개변수 또는 파라미터라고 한다.
+             document.write(left+right + '<br>');
+         }
+
+         sum(2,3);//여기서 함수안에 2,3같은 수를 인자 또는 알규먼트라고 하고
+         sum(234,90);//이로 두 수를 더하는 함수 하나로 무스히 많은 더하기 계산이 가능해 진다. 
+         //두 인자와 매개변가 없었다면 우리는 모든 더하는 계산을 할 때 마다 위  그 수를 써줘야 한다. 
+
+     </script>
+     <h2> return</h2>
+     <script>
+         function sum(left, right){
+             return left+right;//return을 통해 즉 값을 반환 해주므로 sum이라는 함수를 가지고 더 다양한 것을 만들수 있다.
+         }
+         document.write(sum(2,3)+'<br>');
+         document.write('<div style="color:red">'+sum(2,3)+'</div>');
+         document.write('<div style="font-size:3rem;">'+sum(2,3)+'</div>'); 
+         //같은 인자를 받아서 같은 결과를 가지고도 더 다양한 것을 만들 수 있다. 
+     </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>object</h2>
+
+    <h3>Create</h3>
+    <script>
+        var job={
+           "nersing":"sister",
+           "programer":"yunji"
+        }
+
+        document.write("nersing: "+job.nersing+'<br>');
+        document.write("programer: "+job.programer+'<br>');
+        //추과
+        job.teacher="Ham";
+        document.write("teacher: "+job.teacher+'<br>');
+        //만약 이름이 길어서 공백이 있을 경우
+
+        job["English teacher"] ="Kim";
+        document.write("teacher: "+job["English teacher"]+'<br>');
+
+
+
+        
+    </script>
+    <h2>iterator</h2>
+    <script>
+        //iterator은 job이라는 객체에 모든 데이타를 가져올때 사용 하고 그때 는 아래와 같은 문법으로 사용 한다.
+
+        for(var key in job){
+            document.write(key+ ':' + job[key]+'<br>');
+        }
+    </script>
+    <h2>property & Method</h2>
+    <script>
+        //객체 안에 함수를 메소드 라고 하고  객체 안에 변수를 프라퍼티 라고 한다. 
+     job.showAll=function(){
+        for(var key in job){
+            document.write(key+ ':' + job[key]+'<br>');
+        }
+
+     }
+
+     job.showAll();
+
+    </script>
+
+
+
+</body>
+</html>

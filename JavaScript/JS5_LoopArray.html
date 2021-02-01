@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .js{ 
+            font-weight: bolder;
+            color:powderblue;
+        }
+        .wt{
+          color: #0000ff;
+        }
+        
+    </style>
+</head>
+<body>
+   
+   <h2 class="wt"><a href="gogle.come">JavaScript</a></h2>
+  <ol>
+   <li> <a href="JS1.html" style="color: blue;"> Controlprogramming</a></li>
+   <li><a href="JS3_Loop.html" style="color: blue;"> LoopProgramming</a></li>
+   </ol>
+   <input  type="button" value="night" onclick="
+   var target= document.querySelector('body');
+
+
+   if(this.value==='night'){
+       
+    target.style.backgroundColor='black';
+    target.style.color='white'
+    this.value='day';
+      var alist=document.querySelectorAll('a');
+        var i=0;
+        console.log(alist[i]);
+        while(i<alist.length){
+        alist[i].style.color='powderblue';
+        i=i+1
+        }
+
+   } else{
+     target.style.backgroundColor='white';
+     target.style.color='black';
+    this.value='night';
+    var alist=document.querySelectorAll('a');//a 태그들의  값을 배열로 반환 해준다. 
+    var i=0;
+    console.log(alist[i]);
+    while(i<alist.length){
+    alist[i].style.color='blue';//반복문으로 배열에 모든 링크에 색을 변화 해 준다. 
+    i=i+1
+    }
+
+   }
+   
+   ">
+
+
+
+   <br><br><br> 
+   <span class="js">JavaScript</span> (JS) is a lightweight, interpreted, or just-in-time compiled programming 
+    language with first-class functions. While it is most well-known as the scripting language for Web pages, 
+    many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. <span class="js">JavaScript</span> is a prototype-based, 
+    multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative 
+    (e.g. functional programming) styles. Read more about  <span class="js">JavaScript</span> .
+
+</body>
+</html>
